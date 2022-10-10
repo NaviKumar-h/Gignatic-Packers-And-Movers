@@ -1,0 +1,80 @@
+.services-list{
+    
+}
+
+.services-list ul{
+    padding: 10px;
+}
+
+.link-d{
+    display: flex;
+    margin: 1px 0 1px 0;
+    height: 40px; 
+}
+
+.link-d .main-link{
+    width: 75%;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: ease-out 1s;
+}
+
+.link-d .main-link:hover{
+    background: darkorange;
+}
+
+.link-d .main-link li, 
+.link-d .main-link li a{
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    padding: 5px 1px 10px 5px;
+    color: #ffffff;  
+}
+
+.link-d .hand-link{
+    height: 40px;
+    width: 10%;
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+.link-d .hand-link i{
+    margin: 12px 0 0 12px;
+    color: #ffffff;
+}
+
+.why-chose-us{
+    width: 80%;
+    background: #e2e4e6;
+    margin-left: 25px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+     box-shadow: 0 10px 6px -6px #777;
+}
+
+@media screen and (max-width: 769px){
+    .link-d .main-link{
+        width: 90%;
+    }
+
+    .why-chose-us{
+        width: 90%;
+        margin-left: 35px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+    }
+    .for-res p{
+        margin: 20px 0 0 10px;
+    }
+}
+
+
+
+.why-chose-us li, h5{
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+}

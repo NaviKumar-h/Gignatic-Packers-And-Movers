@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/quotation.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-md-10" style="border: 2px solid black">
+
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+
+<div id="firstpage">
+    <div class="col-sm-6 text-right"><a class="btn btn-success" id="exportForm">Export page</a></div>
+    <form method="GET">
+        What is your name: <input type="text" size="20" id="myname"
+            onkeydown="if (event.keyCode == 13)  document.getElementById('mybutton').click()" />
+        <button type="button" id="mybutton">Submit</button>
+    </form>
+    <div id="hellomessage"></div>
+</div>
+
+    <script>
+        function ShowHelloMessage() {
+            var name = document.getElementById("myname");
+            document.getElementById("hellomessage").innerHTML = "Hello, " + name.value;
+        }
+        document.getElementById("mybutton").onclick = ShowHelloMessage;
+    </script>
+
+    <script>
+        $('#exportForm').click(function(){
+  var pdf = new jsPDF('a', 'mm', 'a4');
+  var firstPage;
+  
+  html2canvas($('#first-page'), {
+    onrendered: function(canvas) {
+      firstPage = canvas.toDataURL('image/jpeg', 1.0);
+    }
+  });
+ 
+  
+  setTimeout(function(){
+    pdf.addImage(firstPage, 'JPEG', 5, 5, 200, 0);
+    pdf.addPage();
+  }, 150);
+});
+    </script>
+</body>
+
+</html>

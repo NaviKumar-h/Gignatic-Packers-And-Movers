@@ -1,0 +1,142 @@
+
+  .img-ser{
+    background: url(../images/services-banner.jpg);
+    background-size: cover;
+    min-height: 300px;
+    background-attachment: fixed; 
+}
+
+.ser-info{
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    height: 300px;
+}
+
+  main {
+    max-width: 1300px;
+    margin: auto;
+    transform: scale(0.9);
+  }
+  .lp {
+    height: 500px;
+    box-shadow: 0px 0px 8px 1px #ccc;
+    background: #fafafa;
+    position: relative;
+    padding: 24px 24px 56px;
+    display: flex;
+  }
+  /*GENERAL*/
+ .lp__col-img {
+    height: auto;
+    width: 70%;
+    background: #ddd;
+    background: url(../images/services-card-1.jpg) no-repeat center center;
+    background-size: cover;
+  } 
+
+  .lp__col-img-1 {
+    height: auto;
+    width: 70%;
+    background: #ddd;
+    background: url(../images/services-card-2.jpg) no-repeat center center;
+    background-size: cover;
+  } 
+
+  .lp__col-img-2 {
+    height: auto;
+    width: 70%;
+    background: #ddd;
+    background: url(../images/services-card-3.jpg) no-repeat center center;
+    background-size: cover;
+  } 
+
+  .lp__col-img-3 {
+    height: auto;
+    width: 70%;
+    background: #ddd;
+    background: url(../images/services-card-4.jpg) no-repeat center center;
+    background-size: cover;
+  } 
+
+  .lp__col-img-4 {
+    height: auto;
+    width: 70%;
+    background: #ddd;
+    background: url(../images/services-card-5.jpg) no-repeat center center;
+    background-size: cover;
+  } 
+
+  .lp__col-img-5 {
+    height: auto;
+    width: 70%;
+    background: #ddd;
+    background: url(../images/services-card-6.jpg) no-repeat center center;
+    background-size: cover;
+  } 
+
+  .lp__col-txt {
+    width: 30%;
+    margin: 0 32px;
+    
+    color: gray;
+  }
+  .lp__col__topP {
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .lp__col__h1 {
+    font-size: 32px;
+    color: #000000;
+  }
+  .lp__col_h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 30px 0;
+  }
+  .lp__col_bottomP {
+    font-size: 16px;
+  }
+
+  .lp__col {
+    width: 70%; 
+  }
+  
+  @media screen and (max-width: 895px) {
+    .lp {
+      flex-direction: column;
+      height: 100%;
+    }
+    .lp__col {
+      width: 100%; 
+    }
+    .lp__col-img { 
+      height: 300px;
+    }
+
+    .lp__col-img-1 { 
+        height: 300px;
+      }
+
+      .lp__col-img-2 { 
+        height: 300px;
+      }
+      
+      .lp__col-img-3 { 
+        height: 300px;
+      }
+      
+      .lp__col-img-4 { 
+        height: 300px;
+      }
+      
+      .lp__col-img-5 { 
+        height: 300px;
+      }
+
+    .lp__col-txt {
+      margin: 8px 0;
+      overflow-y: scroll;
+      overflow-y: scroll;
+    }
+  }

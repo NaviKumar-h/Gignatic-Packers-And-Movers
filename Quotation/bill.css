@@ -1,0 +1,382 @@
+
+
+.main-header{
+    border-radius: 10px;
+	background: #ffffff;
+	max-width: 800px;
+}
+
+
+.main-header .mdr-6{
+    margin-top: 6px;
+}
+
+.main-header .mdr-6 .st-0{
+	margin-left: -50px;
+}
+
+.main-header .mdr-6 .st-1{
+    margin-left: 22px;
+}
+
+.main-header .mdr-6 .st-2{
+    margin-left: 13px;
+}
+
+@media screen and (max-width: 796px) {
+
+	.main-header{
+		border-radius: 10px;
+		background: #ffffff;
+		min-width: 800px;
+	}
+
+
+    .main-header .mdr-6 .st-0{
+        margin-left: -45px;
+    }
+
+    .main-header .mdr-6 .st-1{
+        margin-left: 25px;
+    }
+    
+    .main-header .mdr-6 .st-2{
+        margin-left: 15px;
+	}
+	
+	.addrr{
+		margin-left: 62%;
+		min-width: 100%;
+	}
+    
+}
+
+
+.main-header-1{
+    border-radius: 10px;
+	background: #ffffff;
+	max-width: 800px;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+.main-header-1 .inner-header-1 .bill input{
+	max-width: 150px;
+	border: none;
+	border-bottom: 1.5px dotted #000000;
+	outline: none;
+}
+
+.main-header-1 .inner-header-1 .pan input{
+	max-width: 150px;
+	border: none;
+	border-bottom: 1.5px dotted #000000;
+	outline: none;
+}
+
+.main-header-1 .inner-header-1 .date input{
+	max-width: 150px;
+	border: none;
+	border-bottom: 1.5px dotted #000000;
+	outline: none;
+}
+
+.main-header-1 .inner-header-1 .pan, .date{
+	margin-left: 30px;
+}
+
+.main-header-1 .inner-header-1 .bill label, .pan label, .date label{
+	font-weight: 900;
+}
+
+@media screen and (max-width: 796px) {
+
+	.main-header-1{
+		background: #ffffff;
+		min-width: 800px;
+	}
+
+	.main-header-1 .inner-header-1 .bill{
+		margin-left: 20px;
+	}
+}
+
+.main-header-2{
+	background: #ffffff;
+	border: 1.8px solid #000000;
+	max-width: 800px;
+	margin-top: 20px;
+}
+
+.main-header-2 .inner-header-2 input{
+	width: 90%;
+	border: none;
+	border-bottom: 1.5px dotted #000000;
+	outline: none;
+}
+
+.main-header-2 .inner-header-2 .from-to input{
+	width: 42.2%;
+	border: none;
+	border-bottom: 1.5px dotted #000000;
+	outline: none;
+	margin-bottom: 5px;
+}
+
+.main-header-2 .inner-header-2 label, .from-to label{
+	font-weight: 600;
+}
+
+@media screen and (max-width: 796px) {
+
+	.main-header-2{
+		background: #ffffff;
+		min-width: 800px;
+	}
+
+
+}
+
+.main-header-3{
+	background: #ffffff;
+	border: 1.8px solid #000000;
+	max-width: 800px;
+	margin-top: 20px;
+}
+
+
+@media screen and (max-width: 796px) {
+
+	.main-header-2{
+		background: #ffffff;
+		min-width: 800px;
+	}
+
+
+}
+
+.main-header-3 .main-block{
+	display: flex;
+}
+
+.main-header-3 .main-block .sr-n{
+	background: #000000;
+	color: #ffffff;
+	min-width: 55px;
+	min-height: 20px;
+	border-right: 1.8px solid #000000;
+	border-bottom: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .particular{
+	background: #000000;
+	color: #ffffff;
+	min-width: 445px;
+	min-height: 20px;
+	border-right: 1.8px solid #000000;
+	border-bottom: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .norma{
+	background: #000000;
+	color: #ffffff;
+	min-width: 120px;
+	min-height: 20px;
+	border-right: 1.8px solid #000000;
+	border-bottom: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .rat{
+	background: #000000;
+	color: #ffffff;
+	min-width: 120px;
+	min-height: 20px;
+	border-bottom: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .sr-n-1{
+	min-width: 55px;
+	min-height: 35px;
+	border-right: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .particular-1{
+	min-width: 445px;
+	min-height: 35px;
+	border-right: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .norma-1{
+	min-width: 120px;
+	min-height: 35px;
+	border-right: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .rat-1{
+	min-width: 120px;
+	min-height: 35px;
+}
+
+.main-header-3 .main-block .sr-n-2{
+	min-width: 55px;
+	min-height: 25px;
+	border-right: 1.8px solid #000000;
+	border-bottom: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .particular-2{
+	min-width: 445px;
+	min-height: 25px;
+	border-right: 1.8px solid #000000;
+	border-bottom: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .norma-2{
+	min-width: 120px;
+	min-height: 25px;
+	border-right: 1.8px solid #000000;
+	border-bottom: 1.8px solid #000000;
+	border-top: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .rat-2{
+	min-width: 120px;
+	min-height: 25px;
+	border-bottom: 1.8px solid #000000;
+	border-top: 1.8px solid #000000;
+}
+
+.main-header-3 .main-block .word{
+	min-width: 800px;
+}
+
+.main-header-3 .main-block .word input{
+	width: 84%;
+	border: none;
+	border-bottom: 1.5px dotted #000000;
+	outline: none;
+}
+
+.main-header-3 .main-block .word .inp-2{
+	width: 98.9%;
+	border: none;
+	border-bottom: 1.5px dotted #000000;
+	outline: none;
+	margin-bottom: 3px;
+}
+
+@media screen and (max-width: 796px) {
+
+	.main-header-3{
+		background: #ffffff;
+		min-width: 800px;
+	}
+
+
+}
+
+.main-header-4{
+	background: #ffffff;
+	max-width: 800px;
+	margin-top: 5px;
+}
+
+.main-header-4 .footer{
+	display: flex;
+}
+
+.main-header-4 .footer .part-1{
+	min-width: 50%;
+	max-width: 50%;
+}
+
+.main-header-4 .footer .part-2{
+	min-width: 50%;
+	max-width: 50%;
+}
+
+.main-header-4 .footer .part-1 .ip-1{
+	min-width: 64.5%;
+	max-width: 64.5%;
+	border: none;
+	outline: none;
+}
+
+.main-header-4 .footer .part-1 .ip-2{
+	min-width: 82%;
+	max-width: 82%;
+	border: none;
+	outline: none;
+}
+
+.main-header-4 .footer .part-1 .ip-3{
+	min-width: 70%;
+	max-width: 70%;
+	border: none;
+	outline: none;
+}
+
+.main-header-4 .footer .part-2 .st{
+	text-align: end;
+}
+
+@media screen and (max-width: 796px) {
+
+	.main-header-4{
+		background: #ffffff;
+		min-width: 800px;
+	}
+
+	
+
+}
+
+button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    background: #ff2929;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 1.5s;
+}
+
+button:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+a{
+    font-size: 32px;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+.button{
+    border: 1px solid  rgb(29, 194, 29);
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    float: right;
+    margin-right: 780px;
+    margin-bottom: 40px;
+    background: rgb(29, 194, 29);
+    transition: 1.5s;
+}
+
+.button:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+@media screen and (max-width: 792px){
+	.button{
+		margin-right: -180px;
+	}
+}

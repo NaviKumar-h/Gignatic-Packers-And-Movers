@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    background: #ff2929;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 1.5s;
+}
+
+button:hover{
+    background: #ffffff;
+    color: #000000;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+        integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.1.1/jspdf.umd.min.js"
+        integrity="sha512-/Am09zlYshHgRizY3RkConGj4BsYIdb8mS7r5XAXw0rTiLgGSHzpUHTQBhinWR32C/KzLr749J1xuORzT2JnRA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.1.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+        <img id="img" src="uploads/bill.png"/>
+        <button id="button" onclick="savePDF();">Download PDF</button>
+
+    
+
+
+    <script>
+        var imgDATA = ''
+        var img = document.getElementById('img');
+        img.crossOrigin = 'Anonymous';
+        img.onload = function(){
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext('2d');
+            canvas.width = this.naturalWidth;
+            canvas.height = this.naturalHeight;
+            ctx.drawImage(this, 0, 0, 795, 1124);
+            imgDATA = canvas.toDataURL('image/png');
+        }
+
+        function savePDF(){
+            var doc = new jsPDF()
+            doc.addImage(img, 'PNG', 0, 0, 210, 300)
+            doc.save("bill.pdf")
+        }
+    </script>
+   
+</body>
+</html>
